@@ -112,7 +112,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            text-align: justify;
             padding: 80px 20px;
             position: relative;
             margin-bottom: 0;
@@ -122,6 +122,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: justify;
             justify-content: center;
             width: 100%;
         }
@@ -420,11 +421,17 @@
             font-size: 1.3rem;
             font-weight: 400;
             color: #555;
+            text-align: justify;
         }
 
         .display-5 {
             font-size: 2.5rem;
             font-weight: 700;
+        }
+
+        .section p.indent {
+            text-indent: 30px;
+            text-align: justify;
         }
 
         /* FOOTER */
@@ -458,15 +465,10 @@
                    >
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-medium">
                     <li class="nav-item"><span class="nav-link active" onclick="showSection('home')">Accueil</span></li>
                     <li class="nav-item"><span class="nav-link" onclick="showSection('presentation')">Présentation</span></li>
-                    <li class="nav-item"><span class="nav-link" onclick="showSection('valeurs')">Valeurs</span></li>
-                    <li class="nav-item"><span class="nav-link" onclick="showSection('axes')">Axes</span></li>
                     <li class="nav-item"><span class="nav-link" onclick="showSection('projets')">Projets</span></li>
                     <li class="nav-item"><span class="nav-link" onclick="showSection('publications')">Publications</span></li>
                     <li class="nav-item"><span class="nav-link" onclick="showSection('statuts')">Statuts</span></li>
@@ -563,6 +565,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4">
                         <div class="gallery-item gallery-video" onclick="openLightbox(this)">
                             <video src="Video_2.mp4" loading="lazy"></video>
@@ -574,6 +577,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4">
                         <div class="gallery-item gallery-video" onclick="openLightbox(this)">
                             <video src="Video_3.mp4" loading="lazy"></video>
@@ -585,6 +589,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4">
                         <div class="gallery-item gallery-video" onclick="openLightbox(this)">
                             <video src="Video_4.mp4" loading="lazy"></video>
@@ -596,6 +601,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4">
                         <div class="gallery-item gallery-video" onclick="openLightbox(this)">
                             <video src="Video_5.mp4" loading="lazy"></video>
@@ -607,6 +613,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-md-4">
                         <div class="gallery-item gallery-video" onclick="openLightbox(this)">
                             <video src="Video_6.mp4" loading="lazy"></video>
@@ -630,87 +637,15 @@
             <h2 class="section-title">Qui sommes-nous ?</h2>
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <p class="lead"><strong>Association Nationale Territoires en Innovation</strong> allie recherche scientifique et action entrepreneuriale pour relever les défis du développement territorial, en particulier dans les pays du Sud.</p>
-                    <p>Nous promouvons une <strong>réciprocité réelle</strong> entre l'Afrique et l'Europe : transfert de savoir-faire, innovations sociales et bonnes pratiques dans les deux sens.</p>
-                    <p>Objectif : faire des populations les actrices de leur propre développement, renforcer leur autonomie et repenser les migrations forcées par la précarité.</p>
+                    <p class="lead"><strong>L'Association Nationale Territoires en Innovation</strong> est une organisation à vocation sociale créée pour construire une autre forme de développement social au Sénégal.
+                    L'association repose sur trois piliers fondamentaux :<br />
+                    <strong><p class="indent"> .La recherche-action</strong> : Nous menons des activités de recherche scientifique appliquée sur le développement social et local, pour mieux comprendre et répondre aux enjeux des populations.<br /></p>
+                    <strong><p class="indent"> .L'entrepreneuriat local</strong> : Nous impulsons une dynamique entrepreneuriale à travers des actions de solidarité favorisant l'émergence d'initiatives économiques locales.<br /></p>
+                    <strong><p class="indent"> .La citoyenneté active</strong> : Nous défendons et représentons les intérêts des populations, particulièrement les plus vulnérables et défavorisées, en les mobilisant pour des changements sociaux concrets.<br /></p>
+                    <p class="lead">Basée à Fandène (Région de Thiès au Sénégal), In'Terra Sénégal est une association ouverte à tous, sans distinction, fonctionnant selon les principes de transparence, de justice sociale et de paix sociale. Elle s'inscrit dans une démarche d'utilité publique, sans ambition politique ou partisane.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600" alt="Territoires et innovation" class="img-fluid rounded-3">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- VALEURS -->
-    <section id="valeurs" class="section" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title">Nos Valeurs</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card text-center p-5 h-100">
-                        <i class="bi bi-handshake display-1 text-primary mb-4"></i>
-                        <h4 class="text-secondary">Réciprocité</h4>
-                        <p>Échanges équilibrés de savoirs et d'innovations entre Nord et Sud.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center p-5 h-100">
-                        <i class="bi bi-heart-fill display-1 text-primary mb-4"></i>
-                        <h4 class="text-secondary">Dignité humaine</h4>
-                        <p>Mettre l'humain et l'autonomie des populations au centre du développement.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center p-5 h-100">
-                        <i class="bi bi-lightbulb-fill display-1 text-primary mb-4"></i>
-                        <h4 class="text-secondary">Innovation sociale</h4>
-                        <p>Recherche-action pour des solutions locales durables et inclusives.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AXES STRATÉGIQUES -->
-    <section id="axes" class="section bg-light-alt" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title">Axes Stratégiques</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 p-4">
-                        <h5 class="text-primary">Échange de bonnes pratiques</h5>
-                        <p>Transfert d'innovations et de savoir-faire entre territoires et organisations.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 p-4">
-                        <h5 class="text-primary">Entrepreneuriat & Emploi</h5>
-                        <p>Appui aux projets locaux et insertion professionnelle.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 p-4">
-                        <h5 class="text-primary">Repenser la migration</h5>
-                        <p>Retenir les talents sur place par le développement local et solidaire.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 p-4">
-                        <h5 class="text-primary">Santé inclusive</h5>
-                        <p>Mutuelles de santé et fonds de solidarité.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 p-4">
-                        <h5 class="text-primary">Recherche-action</h5>
-                        <p>Études de terrain pour une connaissance fine des territoires.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 p-4">
-                        <h5 class="text-primary">Échange interculturel</h5>
-                        <p>Renforcer les liens entre peuples et territoires.</p>
-                    </div>
+                    <img src="Accueil.jpg" alt="Territoires et innovation" class="img-fluid rounded-3">
                 </div>
             </div>
         </div>
@@ -724,24 +659,24 @@
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="text-primary">Fonds de solidarité locale</h5>
-                            <p>Interventions d'urgence (priorité santé) et veille territoriale.</p>
+                            <h5 class="text-primary">Construction d'une salle polyvalente</h5>
+                            <p>Une salle polyvalente, multifonctionnelle et moderne pour les enfants de l'école Clément Birame NDIONE de Fandène.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="text-primary">Mutuelle de santé</h5>
-                            <p>Accès équitable aux soins et réduction des inégalités.</p>
+                            <h5 class="text-primary">Sécurisation de l'école Clément Birame NDIONE</h5>
+                            <p>Emploi d'un agent de sécurité pour assurer la sécurité des élèves, du personnel et des équipements.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="text-primary">Coopérative agricole</h5>
-                            <p>Mutualisation des ressources pour plus de revenus et d'autonomie.</p>
+                            <h5 class="text-primary">A venir</h5>
+                            <p>A venir</p>
                         </div>
                     </div>
                 </div>
@@ -760,24 +695,24 @@
                 <div class="col-md-4 publication-card">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Rapport annuel 2025</h5>
-                            <p class="card-text">Bilan des actions menées au Sénégal et en France.</p>
+                            <h5 class="card-title">Rapport d'action</h5>
+                            <p class="card-text">Bilan des actions menées pour le projet de construction de la salle polyvalente.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 publication-card">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Étude territoriale Fandène</h5>
-                            <p class="card-text">Analyse diagnostic des besoins et ressources locales.</p>
+                            <h5 class="card-title">A venir</h5>
+                            <p class="card-text">A venir.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 publication-card">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Guide entrepreneuriat local</h5>
-                            <p class="card-text">Ressources et outils pour lancer des projets durables.</p>
+                            <h5 class="card-title">A venir</h5>
+                            <p class="card-text">A venir.</p>
                         </div>
                     </div>
                 </div>
